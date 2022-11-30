@@ -1,0 +1,33 @@
+version: "3.3"
+
+services:
+  postgres-service:
+    container_name: 'postgres-container'
+    image: postgres:14-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: student_db
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+    stdin_open: true
+    ports:
+      - "6000:5432"
+
+  scripts-service:
+    container_name: 'python-container'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      POSTGRES_DB: student_db
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+      POSTGRES_HOST: postgres-service
+      POSTGRES_PORT: 5432
+      DJANGO_SUPERUSER_USERNAME: django_admin
+      DJANGO_SUPERUSER_PASSWORD: django_password
+    command: sh script_run.sh

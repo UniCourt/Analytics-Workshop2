@@ -1,0 +1,5 @@
+docker-compose.yaml
+Dockerfile
+*.py
+django_app/
+student/
