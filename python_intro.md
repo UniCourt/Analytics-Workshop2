@@ -65,19 +65,30 @@ Meanwhile, Python 3.0 was released in 2008. Python 3 is not backward compatible 
 
 # How is python different from other programming languages:
 
+Comparison Between Cpp, Java and Python 
+
+| C++                                                   | JAVA                                                   | PYTHON                                                                   |
+|-------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------------------|
+| Compiled Programming language                         | Compiled Programming language                          | Interpreted Programming Language                                         |
+| Provide both single and multiple inheritance          | Provide partial multiple inheritance using interfaces  | Provide both single and multiple inheritance                             |
+| Platform dependent                                    | Platform Independent                                   | Platform Independent                                                     |
+| Has limited number of library support                 | Has library support for many concepts like UI          | Has a huge set of libraries that make it fit for AI, datascience, etc    |
+| Code length is a bit lesser, 1.5 times less that java | Java has quite huge code                               | Smaller code length, 3-4 times less than java.                           |
+| Functions and variables are used outside the class    | Every bit of code is inside a class                    | Functions and variables can be declared and used outside the class also. |
+| C++ program is fast compiling                         | Java Program compiler a bit slower than C++            |  Due to the use of interpreter execution is slower.                      |                                 |
+
 # Running Python
 
-Get the App from git 
+Run docker ps command and check for a python image available locally
 ```shell
-https://github.com/UniCourt/Analytics-Workshop2
-```
-cd into the app folder
-Use this command to start a python container. Use two separate terminals to run these commands
-```shell
-docker-compose up
-```
-```shell
-docker exec -it python-container sh
+docker images |grep "python"
+python                                               3.7                        7d2ecbd72983   7 months ago    907MB
+
+docker run -it python:3.7
+Python 3.7.14 (default, Sep 13 2022, 15:16:28) 
+[GCC 10.2.1 20210110] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
 ```
 # There are two different ways to start Python:
 
