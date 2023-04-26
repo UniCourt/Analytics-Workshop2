@@ -30,6 +30,35 @@ SyntaxError: leading zeros in decimal integer literals are not permitted;
 >>>000000000
 0
 ```
+### Operations on Integers
+
+```python
+>>> 100
+100
+# addition
+>>> 12 + 18
+30
+# subtraction
+>>>10 - 5
+5
+# Multiplication
+>>> 3*4
+12
+# Division with Quotient in decimals
+>>> 5/2
+2.5
+# Division to get Quotient as whole number
+>>> 5//2
+2
+# Division to get Remainder
+>>> 5%2
+1
+# Division By 0
+>>> 8/0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+```
 
 ## String:
 
