@@ -27,7 +27,6 @@ Following are important characteristics of python −
 
 - It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.
 
-## Applications of Python
 As mentioned before, Python is one of the most widely used language over the web. I'm going to list few of them here:
 
 - Easy-to-learn − Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.
