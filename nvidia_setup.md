@@ -80,3 +80,6 @@ You now have:
 - A valid API key for workshop use
 
 Keep the key private and rotate it if it is ever exposed.
+
+
+[Food Delivery Chatbot : skill file](food_delivery_chatbot_skill.md)
